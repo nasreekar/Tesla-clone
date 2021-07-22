@@ -25,6 +25,14 @@ const styles = StyleSheet.create({
     subtitle: {
         fontSize: 16,
         color: appColors.subtitle
+    },
+    buttonsContainer: {
+        width: '100%',
+        position: 'absolute',
+        bottom: 48
+    },
+    subtitleCta: {
+        textDecorationLine: "underline"
     }
 });
 
