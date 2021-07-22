@@ -6,6 +6,9 @@ import styles from './styles'
 
 const CarItem = (props) => {
     const { name, tagline, taglineCTA, image } = props.car
+    const buttonTitle = name.includes("Solar") ? 'Order Now' : 'Custom Order'
+    const buttonSubtitle = name.includes("Solar") ? 'Learn More' : 'Existing Inventory'
+
     return (
         < View style={styles.carContainer} >
             <ImageBackground source={image} style={styles.backgroundImage} />
@@ -26,13 +29,13 @@ const CarItem = (props) => {
             <View style={styles.buttonsContainer}>
                 < CustomButton
                     type={buttonEnum.Primary}
-                    title="Custom Order"
+                    title={buttonTitle}
                     onPress={() =>
                         Alert.alert(`Custom Order is pressed`)
                     } />
                 <CustomButton
                     type={buttonEnum.Secondary}
-                    title="Existing Inventory"
+                    title={buttonSubtitle}
                     onPress={() =>
                         Alert.alert(`Existing Inventory is pressed`)
                     } />
