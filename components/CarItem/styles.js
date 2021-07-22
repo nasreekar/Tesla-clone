@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native"
+import { appColors } from "../../utils/appColors";
 
 const styles = StyleSheet.create({
     carContainer: {
@@ -12,18 +13,18 @@ const styles = StyleSheet.create({
         position: 'absolute'
     },
     infoContainer: {
-        marginTop: '25%', // passing a relative height at the moment
+        marginTop: '25%', // passing a relative margin at the moment
         width: '100%',
         alignItems: 'center'
     },
     title: {
         fontSize: 32,
         fontWeight: '700',
-        color: '#393c41'
+        color: appColors.title
     },
     subtitle: {
         fontSize: 16,
-        color: '#898f9a',
+        color: appColors.subtitle
     }
 });
 

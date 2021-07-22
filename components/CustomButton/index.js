@@ -1,12 +1,14 @@
 import React from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
+import { appColors } from '../../utils/appColors'
 import { buttonEnum } from '../../utils/buttonEnum'
+
 import styles from './styles'
 
 const CustomButton = (props) => {
     const { type, title, onPress } = props
-    const buttonBackgroundColor = type === buttonEnum.Primary ? '#171A20CC' : '#FFFFFFA6'
-    const buttonTextColor = type === buttonEnum.Primary ? '#FFFFFF' : '#171A20'
+    const buttonBackgroundColor = type === buttonEnum.Primary ? appColors.primaryButtonColor : appColors.secondaryButtonColor
+    const buttonTextColor = type === buttonEnum.Primary ? appColors.primaryButtonTextColor : appColors.secondaryButtonTextColor
 
     return (
         <View style={styles.buttonContainer}>
