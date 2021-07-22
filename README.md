@@ -6,5 +6,5 @@ Things I might include:
 * webview to load some CTA links
 
 
-Progress so far:
+
 ![](tesla.gif)
