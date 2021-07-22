@@ -5,20 +5,20 @@ import CustomButton from '../CustomButton'
 import styles from './styles'
 
 const CarItem = (props) => {
-    const { title, subtitle, subtitleCta, imageSource } = props
+    const { name, tagline, taglineCTA, image } = props.car
     return (
         < View style={styles.carContainer} >
-            <ImageBackground source={imageSource} style={styles.backgroundImage} />
+            <ImageBackground source={image} style={styles.backgroundImage} />
 
             <View style={styles.infoContainer}>
-                <Text style={styles.title}>{title}</Text>
+                <Text style={styles.title}>{name}</Text>
                 <Text style={styles.subtitle}>
-                    {subtitle}{' '}
+                    {tagline}{' '}
                     <Text
                         style={styles.subtitleCta}
                         onPress={() => Alert.alert(`Touchless pressed`)}
                     >
-                        {subtitleCta}
+                        {taglineCTA}
                     </Text>
                 </Text>
             </View>

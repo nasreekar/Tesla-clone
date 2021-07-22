@@ -1,10 +1,10 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, Dimensions } from "react-native"
 import { appColors } from "../../utils/appColors";
 
 const styles = StyleSheet.create({
     carContainer: {
         width: '100%',
-        height: '100%' // to take the whole space it is contained in
+        height: Dimensions.get('window').height
     },
     backgroundImage: {
         width: '100%',
