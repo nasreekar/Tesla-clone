@@ -18,11 +18,12 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 32,
-        fontWeight: '700'
+        fontWeight: '700',
+        color: '#393c41'
     },
     subtitle: {
         fontSize: 16,
-        color: '#5c5e62'
+        color: '#898f9a',
     }
 });
 

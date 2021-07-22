@@ -1,0 +1,1 @@
+export const buttonEnum = { Primary: 'primary', Secondary: 'secondary' };
