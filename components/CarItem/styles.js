@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 32,
-        fontWeight: '700',
+        fontWeight: 'bold',
         color: appColors.title
     },
     subtitle: {
