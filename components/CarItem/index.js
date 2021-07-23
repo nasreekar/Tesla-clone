@@ -3,11 +3,14 @@ import { Alert, Text, View, ImageBackground } from 'react-native'
 import { buttonEnum } from '../../utils/buttonEnum'
 import CustomButton from '../CustomButton'
 import styles from './styles'
+import { useNavigation } from '@react-navigation/native';
 
 const CarItem = (props) => {
-    const { name, tagline, taglineCTA, image } = props.car
+    const { name, tagline, taglineCTA, image, primaryCTA } = props.car
     const buttonTitle = name.includes("Solar") ? 'Order Now' : 'Custom Order'
     const buttonSubtitle = name.includes("Solar") ? 'Learn More' : 'Existing Inventory'
+    const navigation = useNavigation();
+    const touchlessDeliveryUrl = 'https://www.tesla.com/support/taking-delivery?redirect=no'
 
     return (
         < View style={styles.carContainer} >
@@ -19,7 +22,7 @@ const CarItem = (props) => {
                     {tagline}{' '}
                     <Text
                         style={styles.subtitleCta}
-                        onPress={() => Alert.alert(`Touchless pressed`)}
+                        onPress={() => navigation.navigate('Browser', {redirectUrl: touchlessDeliveryUrl} )}
                     >
                         {taglineCTA}
                     </Text>
@@ -31,7 +34,7 @@ const CarItem = (props) => {
                     type={buttonEnum.Primary}
                     title={buttonTitle}
                     onPress={() =>
-                        Alert.alert(`Custom Order is pressed`)
+                        navigation.navigate('Browser', {redirectUrl: primaryCTA} )
                     } />
                 <CustomButton
                     type={buttonEnum.Secondary}
