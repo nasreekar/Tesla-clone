@@ -6,13 +6,17 @@ import BrowserScreen from './screens/BrowserScreen';
 
 const Stack = createStackNavigator();
 
+export const AppStack = () => (
+  <Stack.Navigator headerMode="none">
+    <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="Browser" component={BrowserScreen} />
+  </Stack.Navigator>
+);
+
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Browser" component={BrowserScreen} />
-      </Stack.Navigator>
+      <AppStack />
     </NavigationContainer>
   );
 }
