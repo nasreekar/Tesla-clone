@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 16,
+      "position": "absolute",
+      "top": "5%",
+      "width": "100%",
+      "zIndex": 1,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/images/logo.png",
+      }
+    }
+    style={
+      Object {
+        "height": 25,
+        "resizeMode": "contain",
+        "width": 100,
+      }
+    }
+    testID="Tesla logo"
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/images/menu.png",
+      }
+    }
+    style={
+      Object {
+        "height": 25,
+        "width": 25,
+      }
+    }
+    testID="Menu Icon"
+  />
+</View>
+`;

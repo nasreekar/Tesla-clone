@@ -217,6 +217,7 @@ exports[`<App /> renders correctly 1`] = `
                               "width": 100,
                             }
                           }
+                          testID="Tesla logo"
                         />
                         <Image
                           source={
@@ -230,6 +231,7 @@ exports[`<App /> renders correctly 1`] = `
                               "width": 25,
                             }
                           }
+                          testID="Menu Icon"
                         />
                       </View>
                       <RCTSafeAreaView
