@@ -2,19 +2,12 @@ import React from "react";
 import { render } from "@testing-library/react-native";
 import CustomButton from '../../components/CustomButton';
 import { buttonEnum } from "../../utils/buttonEnum";
-import { appColors } from "../../utils/appColors";
 
 beforeEach(() => {
   jest.useFakeTimers();
 });
 
 describe("<CustomButton />", () => {
-
-  const wrapper = render(<CustomButton type = {buttonEnum.Primary} title={"order now"} onPress ={()=>({})} />);
-  const styles = wrapper.toJSON().props.style;
-  const { backgroundColor } = styles;
-  const childStyles = wrapper.toJSON().children[0].props.style;
-  const {color: buttonTextColor} = childStyles;
 
   it("renders correctly", () => {
     const wrapper = render(<CustomButton type = {buttonEnum.Primary} title={"order now"} onPress ={()=>({})} />);
