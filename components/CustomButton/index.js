@@ -15,7 +15,7 @@ const CustomButton = (props) => {
             <TouchableOpacity
                 style={[styles.buttonStyle, { backgroundColor: buttonBackgroundColor }]}
                 onPress={onPress}>
-                <Text style={[styles.buttonText, { color: buttonTextColor }]}>{title}</Text>
+                <Text testID="customButtonTitle" style={[styles.buttonText, { color: buttonTextColor }]}>{title}</Text>
             </TouchableOpacity>
         </View>
     );

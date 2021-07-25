@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomButton /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "padding": 8,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#171A20CC",
+        "borderRadius": 20,
+        "height": 40,
+        "justifyContent": "center",
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 12,
+            "fontWeight": "500",
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+      testID="customButtonTitle"
+    >
+      order now
+    </Text>
+  </View>
+</View>
+`;
